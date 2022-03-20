@@ -255,7 +255,7 @@ function sharerboxIcons(socialNetworksList = 'facebook, twitter, whatsapp, reddi
 	}
 
 	.sharerbox-icon-fig:hover{
-		width: ${sharerboxIconSize * 2}px;
+		width: ${sharerboxIconSize * 1.1}px;
 	}
 
 	.sharerbox-icon{
