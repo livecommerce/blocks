@@ -380,6 +380,12 @@ function sharerboxIcons(socialNetworksList = 'facebook, twitter, whatsapp, reddi
 	#sharerbox-share-icon:hover{
 		opacity: 1;
 	}
+	
+	@media only screen and (max-width: 600px) {
+		#sharerbox-section{
+			display:none
+		}
+	}
 </style>
 <section id="sharerbox-section">
 	<div id="sharerbox-hidden-icons-wrap">
