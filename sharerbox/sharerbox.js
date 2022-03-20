@@ -1,28 +1,3 @@
-/*
-					    				Sharerbox
-
-			    		Version: 0.8.1; Author: Juan Astudillo
-
-	* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-	*																				*
-	* 		+---------------------------------------------------------------+		*
-	*		|		  		  Copyright © 2020 Juan Astudillo				|		*
-	*		|																|		*
-	*		|				<astudillojuanfrancisco@gmail.com>				|		*
-	*		+---------------------------------------------------------------+		*
-	*																				*
-	* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
-
-*/
-
-
-
-					  /* Script */
-
-
-// Inserting HTML markup and CSS Styles into the document
-
 let sharerboxIconSize;
 
 function sharerboxIcons(socialNetworksList = 'facebook, twitter, whatsapp, reddit', iconSize = 45){
@@ -237,6 +212,9 @@ function sharerboxIcons(socialNetworksList = 'facebook, twitter, whatsapp, reddi
 		transform: translateX(-${sharerboxIconSize}px);
 		transition: 0.25s linear;
 	}
+	#sharerbox-section svg{
+		margin:0;
+	}	
 
 	#sharerbox-hidden-icons-wrap{
 		visibility: visible;
@@ -380,6 +358,7 @@ function sharerboxIcons(socialNetworksList = 'facebook, twitter, whatsapp, reddi
 	}
 
 	#sharerbox-share-icon-wrap{
+		display:none;
 		visibility: visible;
 		transition: 0.25s linear;
 	}
@@ -431,14 +410,14 @@ function sharerboxIcons(socialNetworksList = 'facebook, twitter, whatsapp, reddi
 			</svg>
 		</object>
 	</div>
-	<div id="sharerbox-share-icon-wrap">
+	<!--div id="sharerbox-share-icon-wrap">
 		<!--Share Icon-->
 		<object id="sharerbox-share-icon-fig" title="Share!">
 			<svg class="sharerbox-icon" id="sharerbox-share-icon" enable-background="new 0 0 57.884 57.884" viewBox="0 0 57.884 57.884" >
 				<path d="m13.613 21.662c2.7441 0 5.2047-1.1826 6.921-3.06l14.909 7.1712c-.3564.9927-.5598 2.0538-.5598 3.1689 0 1.1133.2043 2.1762.5598 3.1689l-14.909 7.1694c-1.7163-1.8765-4.1796-3.0618-6.921-3.0618-5.1831 0-9.3861 4.2021-9.3861 9.3852 0 5.184 4.203 9.3861 9.3861 9.3861 5.184 0 9.3861-4.2021 9.3861-9.3861 0-.4968-.0504-.981-.1251-1.4571l15.872-7.6311c1.5516 1.134 3.4578 1.8108 5.5269 1.8108 5.1831 0 9.3852-4.2012 9.3852-9.3825 0-5.1858-4.2021-9.387-9.3852-9.387-2.0691 0-3.9753.6768-5.526 1.8126l-15.871-7.6329c.0738-.4761.1251-.9603.1251-1.4571 0-5.184-4.203-9.3852-9.387-9.3852-5.1831 0-9.3852 4.2012-9.3852 9.3852 0 5.1831 4.2012 9.3825 9.3843 9.3825z" stroke-width=".9"/>
 			</svg>
 		</object>
-	</div>
+	</div-->
 </section>`;
 
 	document.body.insertAdjacentHTML('beforeend', content);
