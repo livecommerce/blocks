@@ -1,6 +1,6 @@
 let sharerboxIconSize;
 
-function sharerboxIcons(socialNetworksList = 'facebook, twitter, whatsapp, reddit', iconSize = 45){
+function sharerboxIcons(socialNetworksList = 'facebook, twitter, whatsapp, reddit', iconSize = 35){
 
 
 	// Setting sharerbox icons size in pixels;
@@ -240,7 +240,7 @@ function sharerboxIcons(socialNetworksList = 'facebook, twitter, whatsapp, reddi
 		display: block;
 		margin: 0;
 		padding: 0;
-		height: ${sharerboxIconSize}px;
+		height: 100%;
 	}
 
 	.sharerbox-icon-fig, #sharerbox-share-icon-fig{
@@ -255,7 +255,7 @@ function sharerboxIcons(socialNetworksList = 'facebook, twitter, whatsapp, reddi
 	}
 
 	.sharerbox-icon-fig:hover{
-		width: ${sharerboxIconSize * 1.1}px;
+		width: ${sharerboxIconSize + 2}px;
 	}
 
 	.sharerbox-icon{
