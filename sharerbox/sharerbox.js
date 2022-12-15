@@ -195,7 +195,7 @@ function sharerboxIcons(socialNetworksList = 'facebook, twitter, whatsapp, reddi
 	var content = `<style type="text/css">
 	#sharerbox-section{
 		box-sizing: border-box;
-		z-index: 9999;
+		z-index: 9990;
 		visibility: hidden;
 		display: flex;
 		flex-flow: row wrap;
